@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lista Kontaktow</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_new_user">AddNewUserActivity</string>
+	
+	<string name="add_new_user">Dodaj Kontakt</string>
+	<string name="enter_name">Podaj Imie</string>
+	<string name="enter_address">Podaj Adres</string>
+    <string name="enter_phone">Podaj Telefon</string>
+    <string name="add">Dodaj</string>
+    
+    <plurals name="users">
+        <item quantity="one">Uzytkownik</item>
+        <item quantity="other">Uzytkownikow</item>
+    </plurals>
+    
+    
+    
+    
+</resources>

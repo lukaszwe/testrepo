@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocalizedUserList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_new_user">AddNewUserActivity</string>
+    <string name="add_new_user">Add New User</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="add">Add</string>
+
+    <plurals name="users">
+        <item quantity="one">User</item>
+        <item quantity="other">User\'s</item>
+    </plurals>
+
+    <string name="title">Title</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+</resources>

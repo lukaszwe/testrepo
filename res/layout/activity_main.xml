@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    
+
+	>
+	<!-- to jest kolor status baru  -->
+    
+    
+	<RelativeLayout 
+	   
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:context="${relativePackage}.${activityClass}" 
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:paddingTop="0dp"
+		 android:background="@color/white">
+	    <Button
+	        android:id="@+id/addUserButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:text="@string/add_new_user" 
+	        android:onClick="addUser"
+	        android:visibility="gone"
+	        
+	        />
+	
+	    <ListView
+	        android:id="@+id/listView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/addUserButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="0dp"
+	        
+	        android:background="@color/white" >
+
+	    </ListView>
+	
+	</RelativeLayout>
+	</FrameLayout>

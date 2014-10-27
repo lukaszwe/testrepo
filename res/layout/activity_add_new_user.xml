@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@color/black"
+	
+	>
+
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+ 	android:background="@color/white"
+ 		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:paddingTop="3dp"
+		android:paddingBottom="3dp"
+ 	
+ 	>
+    <TextView
+        android:id="@+id/add_new_user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/add_new_user"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <android.widget.EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/add_new_user_text"
+        android:background="@drawable/text_borders_top"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="@string/enter_name"
+        android:paddingLeft="10dp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray" >
+
+        <requestFocus />
+    </android.widget.EditText>
+
+    <android.widget.EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextName"
+        android:background="@drawable/text_borders"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="@string/enter_address"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/gray" />
+
+    <android.widget.EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextAddress"
+        android:background="@drawable/text_borders"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="@string/enter_phone"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/add_user_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_new_user_text"
+        android:layout_alignRight="@+id/add_new_user_text"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_light"
+        android:onClick="addUser"
+        android:text="@string/add"
+        android:textColor="@color/white" />
+    
+</RelativeLayout>
+</FrameLayout>
+
+
